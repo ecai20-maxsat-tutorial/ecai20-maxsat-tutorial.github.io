@@ -1,0 +1,159 @@
+<HTML>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+
+
+<HEAD>
+<TITLE>Advances in Maximum Satisfiability --- ECAI 2020 Tutorial</TITLE>
+<BODY>
+
+<table width=1100 cellpadding=20>
+<tr><td>
+
+<H1>Advances in Maximum Satisfiability</H1>
+<h3>Tutorial at <a href="http://ecai2020.eu">ECAI 2020</a>: 24th European Conference on Artificial Intelligence<br>
+August 29 - September 2 (<i>exact date and time to be decided</i>)
+</h3>
+
+<p>
+<i>Significant recent algorithmic and other methodological advances are establishing
+maximum satisfiability (MaxSAT) as a practical Boolean optimization paradigm applicable for solving
+hard optimization problems arising from a wide range of AI and industrial domains.
+This tutorial offers an accessible introduction and details on the current state of the art in MaxSAT solving
+and its applications.</i>
+</p>
+
+<h2>Introduction</h2>
+<p>
+Many important AI problems involve an optimization component. Maximum satisfiability (MaxSAT) is an optimization
+version of Boolean satisfiability (SAT) that can be applied to a variety of  computationally hard optimization problems that arise in AI.
+Constituting a declarative approach to optimization, modern state-of-the-art  MaxSAT solvers allow for
+efficiently tackling NP-hard optimization problems arising from different applications
+via simple propositional encodings.
+<!-- for your application by using a MaxSAT solver.  -->                                                                                                                          
+This can be much less time-consuming than building a customized algorithmic solution specific to a particular optimization problem.
+Indeed, a well-engineered, generic MaxSAT solver can often be more efficient than a custom solution. Furthermore,
+MaxSAT offers an alternative to the more classical declarative optimization paradigm of integer programming (IP), especially in the many AI applications where
+the underlying problems are naturally represented with logical constraints.
+</p>
+
+<p>
+Recent algorithmic and engineering advances are establishing  MaxSAT as a substantial approach
+to efficiently solving NP-hard optimization problems arising from various AI and industrial applications, spanning
+a wide range of major areas in AI, including machine learning, probabilistic graphical models, knowledge representation and reasoning,
+verification and testing, automated planning and reasoning, etc.
+A key aim of the tutorial is to make MaxSAT technology more understandable and accessible to researchers and practitioners working
+in different areas of AI. Indeed, MaxSAT can be in many cases a viable alternative to both designing
+specialized algorithmic solutions as well as to more classically considered declarative approaches
+to solving hard optimization problems, in particular mixed-integer linear programming.
+In addition, the tutorial is expected to provide a more in-depth understanding of MaxSAT to both early-career and senior researchers
+working on related constraint programming and declarative problem solving paradigms.
+</p>
+
+<h2>Focus of the Tutorial</h2>
+
+<p>In this tutorial, we will introduce MaxSAT, give an overview of the different techniques that have been developed for solving MaxSAT,
+focusing on recent advances and covering both complete and incomplete MaxSAT solving, and explain via case studies how MaxSAT has been used to 
+solve problems from different areas of AI. We will also outline major current research directions in MaxSAT.
+After this tutorial, you should be better equipped to assess whether or not MaxSAT would be useful in your work and better able to use modern MaxSAT solvers in your work. 
+<!-- The tutorial assumes no background knowledge beyond what a new graduate student in computer science would possess.-->
+</p>
+
+<p>
+The tutorial is targeted towards both researchers working on related areas in automated reasoning, knowledge representation, and optimization, as well as more generally 
+towards a wide range of the ECAI audience who could benefit from obtaining further knowledge of
+recent progress and state-of-the-art in MaxSAT solving and in applying MaxSAT to solve hard optimization problems arising from various AI and industrial problem domains.
+The tutorial assumes no background knowledge beyond what a new graduate student in computer science would possess.
+</p>
+
+<h2>Tutorial Material</h2>
+
+<p>
+<a href="ecai20-maxsat-tutorial.pdf">Slides from the tutorial</a> (<i>to appear</i>)
+</p>
+
+<h2>Syllabus (<i>preliminary</i>)</h2>
+
+
+<ol>
+<li>Motivation and Basic Concepts
+<ul>
+<li>Exact Optimization</li>
+<li>Benefits of MaxSAT</li>
+<li>MaxSAT
+<ul>
+<li>Basic Definitions</li>
+<li>Solvers: Input Format and Availability</li>
+<li>Evaluations</li>
+</ul>
+</ul>
+<li>Modelling and Applications
+<ul>
+<li>Modelling by Examples: Recent AI Applications</li>
+<li>Representing High-Level Constraints in MaxSAT</li>
+<li>Preprocessing</li>
+</ul>
+<li>Algorithms for MaxSAT Solving
+<ul>
+<li>Branch and Bound</li>
+<li>SAT-Based MaxSAT Solving
+<li>SAT-IP Hybrid Algorithms for MaxSAT</li>
+<li>Incomplete MaxSAT Solving</li>
+<li>Parallel MaxSAT Solving</li>
+</ul>
+<li>Summary and Future Research Directions</li>
+</ol>
+
+<h2>Presenter Biographies</h2>
+
+<p>
+<img src="jeremias.jpg" align=right valign=top width=92>
+<b>Jeremias Berg</b> (<a href="http://www.jeremiasberg.com">webpage</a>)
+is Post-Doctoral Researcher at 
+University of
+Helsinki, Finland.  His research focuses especially on  constraint
+optimization and maximum satisfiability, covering both theoretical and algorithmic aspects
+as well as applications.
+ Dr. Berg has to-date circa 20 peer-reviewed papers published at venues such as
+AIJ,  IJCAI, AAAI, ECAI, CP, and SAT.
+He has also contributed to the development of several state-of-the-art MaxSAT
+solvers and preprocessors, and is the primary developer of the Loandra
+solver which ranked on top in the incomplete track of MaxSAT Evaluation 2019.
+His PhD thesis on MaxSAT received the 2018 Doctoral Dissertation Award by University of Helsinki.
+</p>
+<p>
+<img src="matti.jpeg" align=right valign=top width=100>
+<b>Matti J&auml;rvisalo</b> (<a href="http://www.cs.helsinki.fi/u/mjarvisa/">webpage</a>) 
+is Associate Professor of Computer Science at 
+ University of Helsinki,
+Finland, where he leads the Constraint Reasoning and Optimization group.
+His research interests span several areas in artificial intelligence, including automated reasoning,
+optimization, knowledge representation and graphical models. Beyond theoretical and algorithmic advances,
+his group has been successful in developing  state-of-the-art solvers e.g. for
+ Boolean satisfiability (SAT), maximum satisfiability (MaxSAT), formal argumentation, answer set programming,
+and their applications in structure learning and causal discovery. With more than 100 publications to date,
+Dr. J&auml;rvisalo has received various best paper awards and other international recognitions for his
+contributions, including the 2019 IJCAI-JAIR Best Paper Award and an IJCAI 2016 Early Career Spotlight, as well as
+ further best paper awards at ECAI, CP, KR, ICLP and PGM.
+He was PC Chair for SAT 2013 and is PC Chair of IJCAI-PRICAI 2020 Demo Track as well as Chair of the Finnish AI Society (EurAI
+member society of Finland).
+Furthermore, Dr. J&auml;rvisalo has been involved in organizing the renown SAT solver competitions and MaxSAT Evaluations
+for many years.
+</p>
+
+<p>
+<img src="ruben.jpg" align=right valign=top width=100>
+<b>Ruben Martins</b> (<a href="https://sat-group.github.io/ruben/">webpage</a>)
+is Systems Scientist at Carnegie Mellon University, USA.
+His interests lie in the intersection of constraint programming and synthesis, analysis and verification of programs.
+His recent research focuses on using programming synthesis to improve programmer's productivity and to automate data science-related tasks such as data querying, 
+imputation, consolidation, and tidying. Dr. Martins has more than 40 peer-reviewed papers published in top-tier venues, including, POPL, PLDI, FSE, SAT, CP, with a distinguished 
+paper award at PLDI 2018 for his work on program synthesis. He has developed several award-winning constraint solvers and is the main developer of the Open-WBO MaxSAT solver 
+that has ranked on top in several MaxSAT Evaluations.
+Since 2017, Dr. Martins organizes of the annual MaxSAT Evaluation where state-of-the-art MaxSAT solvers are independently evaluated.
+</p>
+
+</td></tr></table>
+
+</BODY>
+</HTML>
